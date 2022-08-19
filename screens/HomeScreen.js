@@ -17,6 +17,289 @@ const HomeScreen = () => {
   useLayoutEffect(() => {
     navigation.setOptions({ headerShown: false });
   }, []);
+
+  const featuredData = [
+    {
+      title: "Sushi",
+      items: [
+        {
+          id: 1,
+          name: "Sushi",
+          rating: "5",
+          imgUrl: "https://links.papareact.com/gn7",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 2,
+          name: "Sushi",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2018/08/03/08/33/food-3581341_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 3,
+          name: "Sushi",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2014/05/26/14/53/sushi-354628_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 4,
+          name: "Sushi",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2016/04/26/03/55/salmon-1353598_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 5,
+          name: "Sushi",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/10/15/11/41/sushi-2853382_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+      ],
+    },
+    {
+      title: "Hamburger",
+      items: [
+        {
+          id: 1,
+          name: "Hamburger",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 2,
+          name: "Hamburger",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2014/09/03/15/05/sandwich-434658_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 3,
+          name: "Hamburger",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 4,
+          name: "Hamburger",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2019/01/29/18/05/burger-3962996_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 5,
+          name: "Hamburger",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/08/12/18/59/snack-2635035_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+      ],
+    },
+    {
+      title: "Pizza",
+      items: [
+        {
+          id: 1,
+          name: "Pizza",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 2,
+          name: "Pizza",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/01/22/19/12/pizza-2000600_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 3,
+          name: "Pizza",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/09/30/15/10/plate-2802332_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 4,
+          name: "Pizza",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/02/15/10/57/pizza-2068272_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 5,
+          name: "Pizza",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+      ],
+    },
+    {
+      title: "Desert",
+      items: [
+        {
+          id: 1,
+          name: "Desert",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/03/31/18/02/strawberry-dessert-2191973_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 2,
+          name: "Desert",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2016/10/13/11/44/chocolates-1737503_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 3,
+          name: "Desert",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2017/05/02/18/20/blueberries-2278921_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 4,
+          name: "Desert",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2018/05/01/18/21/eclair-3366430_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+        {
+          id: 5,
+          name: "Desert",
+          rating: "5",
+          imgUrl:
+            "https://cdn.pixabay.com/photo/2015/11/19/20/17/cookies-1051884_1280.jpg",
+          genre: "Japanese",
+          address: "123 Main St",
+          short_description: "This is a Test descripton",
+          dishes: [],
+          long: "20",
+          lat: "0",
+        },
+      ],
+    },
+  ];
+
   return (
     <SafeAreaView className="bg-white pt-5">
       {/* Header */}
@@ -57,26 +340,15 @@ const HomeScreen = () => {
         {/* Category */}
         <Categories />
         {/* Featured */}
-        <FeaturedRow
-          title="Featured"
-          id="123"
-          description="Paid placements from our partners"
-          featureCategory="featured"
-        />
-        {/* Tasty Discounts */}
-        <FeaturedRow
-          title="Tasty Discounts "
-          id="1234"
-          description="Paid placements from our partners"
-          featureCategory="featured"
-        />
-        {/* Offers near you */}
-        <FeaturedRow
-          title=" Offers near you"
-          id="12345"
-          description="Paid placements from our partners"
-          featureCategory="featured"
-        />
+        {featuredData.map((data) => (
+          <FeaturedRow
+            title={data.title}
+            data={data.items}
+            id="123"
+            description="Paid placements from our partners"
+            featureCategory="featured"
+          />
+        ))}
       </ScrollView>
     </SafeAreaView>
   );
