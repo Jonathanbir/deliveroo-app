@@ -19,6 +19,7 @@ const FeaturedRow = ({ title, data, description }) => {
       >
         {data.map((data) => (
           <RestaurantCard
+            key={Math.random()}
             id={data.id}
             imgUrl={data.imgUrl}
             title={data.name}

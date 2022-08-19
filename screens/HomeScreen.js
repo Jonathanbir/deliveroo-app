@@ -92,7 +92,7 @@ const HomeScreen = () => {
       title: "Hamburger",
       items: [
         {
-          id: 1,
+          id: 6,
           name: "Hamburger",
           rating: "5",
           imgUrl:
@@ -105,7 +105,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 2,
+          id: 7,
           name: "Hamburger",
           rating: "5",
           imgUrl:
@@ -118,7 +118,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 3,
+          id: 8,
           name: "Hamburger",
           rating: "5",
           imgUrl:
@@ -131,7 +131,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 4,
+          id: 9,
           name: "Hamburger",
           rating: "5",
           imgUrl:
@@ -144,7 +144,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 5,
+          id: 10,
           name: "Hamburger",
           rating: "5",
           imgUrl:
@@ -162,7 +162,7 @@ const HomeScreen = () => {
       title: "Pizza",
       items: [
         {
-          id: 1,
+          id: 11,
           name: "Pizza",
           rating: "5",
           imgUrl:
@@ -175,7 +175,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 2,
+          id: 12,
           name: "Pizza",
           rating: "5",
           imgUrl:
@@ -188,7 +188,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 3,
+          id: 13,
           name: "Pizza",
           rating: "5",
           imgUrl:
@@ -201,7 +201,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 4,
+          id: 14,
           name: "Pizza",
           rating: "5",
           imgUrl:
@@ -214,7 +214,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 5,
+          id: 15,
           name: "Pizza",
           rating: "5",
           imgUrl:
@@ -232,7 +232,7 @@ const HomeScreen = () => {
       title: "Desert",
       items: [
         {
-          id: 1,
+          id: 16,
           name: "Desert",
           rating: "5",
           imgUrl:
@@ -245,7 +245,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 2,
+          id: 17,
           name: "Desert",
           rating: "5",
           imgUrl:
@@ -258,7 +258,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 3,
+          id: 18,
           name: "Desert",
           rating: "5",
           imgUrl:
@@ -271,7 +271,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 4,
+          id: 19,
           name: "Desert",
           rating: "5",
           imgUrl:
@@ -284,7 +284,7 @@ const HomeScreen = () => {
           lat: "0",
         },
         {
-          id: 5,
+          id: 20,
           name: "Desert",
           rating: "5",
           imgUrl:
@@ -344,7 +344,7 @@ const HomeScreen = () => {
           <FeaturedRow
             title={data.title}
             data={data.items}
-            id="123"
+            key={Math.random()}
             description="Paid placements from our partners"
             featureCategory="featured"
           />
