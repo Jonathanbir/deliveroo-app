@@ -43,7 +43,15 @@ const HomeScreen = () => {
           genre: "Japanese",
           address: "123 Main St",
           short_description: "This is a Test descripton",
-          dishes: [],
+          dishes: [
+            {
+              id: 1,
+              name: "Sushi",
+              description: "This is a Test descripton",
+              price: "5",
+              image: "https://links.papareact.com/gn7",
+            },
+          ],
           long: "20",
           lat: "0",
         },
