@@ -79,7 +79,6 @@ const RestaurantScreen = () => {
           <Text className="px-4 pt-6 text-xl font-bold">Menu</Text>
           {/* DishRow */}
           {dishes.map((dish) => {
-            console.log("dish", dish);
             return (
               <DishRow
                 key={Math.random()}
