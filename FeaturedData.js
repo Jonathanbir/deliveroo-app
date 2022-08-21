@@ -39,7 +39,7 @@ const dishes_sushi = [
     id: "5",
     name: "Sushi5",
     description: "This is a Test descripton",
-    price: "200",
+    price: 200,
     image:
       "https://cdn.pixabay.com/photo/2014/05/26/14/53/sushi-354628__480.jpg",
     amount: 0,

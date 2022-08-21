@@ -1,8 +1,9 @@
 import { View, Image, TouchableOpacity, Text } from "react-native";
-import React, { useLayoutEffect } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useLayoutEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { ScrollView } from "react-native-web";
+import { calculateAmounts, calculateTotals } from "../features/basketSlice";
 import DishRow from "../components/DishRow";
 import {
   ArrowLeftIcon,
@@ -13,9 +14,13 @@ import {
 import BasketIcon from "../components/BasketIcon";
 
 const RestaurantScreen = () => {
+  const dispatch = useDispatch();
   const navigation = useNavigation();
   const { items } = useSelector((store) => store.basket);
-
+  useEffect(() => {
+    dispatch(calculateTotals());
+    dispatch(calculateAmounts());
+  }, [items]);
   const {
     params: {
       id,
@@ -81,7 +86,7 @@ const RestaurantScreen = () => {
             </Text>
           </TouchableOpacity>
 
-          <View>
+          <View className="pb-36">
             <Text className="px-4 pt-6 text-xl font-bold">Menu</Text>
             {/* DishRow */}
             {items[0].map((dish) => {
