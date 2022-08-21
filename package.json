@@ -27,6 +27,7 @@
     "react-native-svg": "^13.0.0",
     "react-native-web": "~0.18.7",
     "react-redux": "^8.0.2",
+    "redux-logger": "^3.0.6",
     "tailwindcss-react-native": "^1.7.10"
   },
   "devDependencies": {

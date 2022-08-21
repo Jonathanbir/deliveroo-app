@@ -1,7 +1,9 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
+import { useDispatch } from "react-redux";
 import { StarIcon } from "react-native-heroicons/outline";
 import { useNavigation } from "@react-navigation/native";
+import { setBasket } from "../features/basketSlice";
 
 const RestaurantCard = ({
   id,
@@ -16,6 +18,7 @@ const RestaurantCard = ({
   lat,
 }) => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
   return (
     <TouchableOpacity
       className="bg-white mr-3 shadow"
@@ -32,6 +35,7 @@ const RestaurantCard = ({
           long,
           lat,
         });
+        dispatch(setBasket(dishes));
       }}
     >
       <Image

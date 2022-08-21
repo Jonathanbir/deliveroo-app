@@ -1,21 +1,19 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import Currency from "react-currency-formatter";
-import React, { useState } from "react";
+import React from "react";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
 } from "react-native-heroicons/outline";
+import { useDispatch } from "react-redux";
+import { increaseBasket } from "../features/basketSlice";
 
-const DishRow = ({ id, name, description, price, image }) => {
-  const [isPressed, setIsPressed] = useState(false);
+const DishRow = ({ id, name, description, price, amount, image }) => {
+  const dispatch = useDispatch();
+
   return (
     <>
-      <TouchableOpacity
-        onPress={() => setIsPressed(!isPressed)}
-        className={`bg-white border p-4 border-gray-200 ${
-          isPressed && "border-b-0"
-        }`}
-      >
+      <TouchableOpacity className={`bg-white border p-4 border-gray-200 `}>
         <View className="flex flex-row">
           <View className="flex-1 pr-2">
             <Text className="text-lg mb-1">{name}</Text>
@@ -36,19 +34,21 @@ const DishRow = ({ id, name, description, price, image }) => {
           />
         </View>
       </TouchableOpacity>
-      {isPressed && (
-        <View className="bg-white px-4">
-          <View className="flex flex-row items-center space-x-2 pb-3">
-            <TouchableOpacity>
-              <MinusCircleIcon color="#00CCBB" size={40} />
-            </TouchableOpacity>
-            <Text>0</Text>
-            <TouchableOpacity>
-              <PlusCircleIcon color="#00CCBB" size={40} />
-            </TouchableOpacity>
-          </View>
+      <View className="bg-white px-4">
+        <View className="flex flex-row items-center space-x-2 pb-3">
+          <TouchableOpacity>
+            <MinusCircleIcon color="#00CCBB" size={40} />
+          </TouchableOpacity>
+          <Text>{amount}</Text>
+          <TouchableOpacity
+            onPress={() => {
+              dispatch(increaseBasket({ id }));
+            }}
+          >
+            <PlusCircleIcon color="#00CCBB" size={40} />
+          </TouchableOpacity>
         </View>
-      )}
+      </View>
     </>
   );
 };
