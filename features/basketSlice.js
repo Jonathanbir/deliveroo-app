@@ -1,4 +1,4 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],
@@ -9,7 +9,7 @@ export const basketSlice = createSlice({
   initialState,
   reducers: {
     setBasket: (state, action) => {
-      state.items = [...state.items, action.payload];
+      state.items = [action.payload];
     },
     increaseBasket: (state, { payload }) => {
       const basketItem = state.items[0].find((item) => {
