@@ -6,14 +6,13 @@ import {
   PlusCircleIcon,
 } from "react-native-heroicons/outline";
 import { useDispatch } from "react-redux";
-import { increaseBasket } from "../features/basketSlice";
+import { increaseBasket, decreaseBasket } from "../features/basketSlice";
 
 const DishRow = ({ id, name, description, price, amount, image }) => {
   const dispatch = useDispatch();
-
   return (
     <>
-      <TouchableOpacity className={`bg-white border p-4 border-gray-200 `}>
+      <TouchableOpacity className="bg-white border p-4 border-gray-200">
         <View className="flex flex-row">
           <View className="flex-1 pr-2">
             <Text className="text-lg mb-1">{name}</Text>
@@ -36,8 +35,15 @@ const DishRow = ({ id, name, description, price, amount, image }) => {
       </TouchableOpacity>
       <View className="bg-white px-4">
         <View className="flex flex-row items-center space-x-2 pb-3">
-          <TouchableOpacity>
-            <MinusCircleIcon color="#00CCBB" size={40} />
+          <TouchableOpacity
+            onPress={() => {
+              amount > 0 && dispatch(decreaseBasket({ id }));
+            }}
+          >
+            <MinusCircleIcon
+              color={amount === 0 ? "gray" : "#00CCBB"}
+              size={40}
+            />
           </TouchableOpacity>
           <Text>{amount}</Text>
           <TouchableOpacity

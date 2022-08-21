@@ -2,7 +2,6 @@ import { View, Text, ScrollView } from "react-native";
 import React, { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { ArrowRightIcon } from "react-native-heroicons/outline";
-
 const FeaturedRow = ({ title, data, description }) => {
   return (
     <View>
