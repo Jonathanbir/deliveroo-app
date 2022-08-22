@@ -9,6 +9,7 @@ import React from "react";
 import { XIcon } from "react-native-heroicons/outline";
 import * as Progress from "react-native-progress";
 import MapView from "react-native-maps";
+import { Marker } from "react-native-svg";
 
 const DeliveryScreen = () => {
   return (
@@ -48,7 +49,31 @@ const DeliveryScreen = () => {
         }}
         className="flex flex-1 -mt-10 z-0"
         mapType="mutedStandard"
-      />
+      >
+        <Marker
+          coordinate={{
+            latitude: "1",
+            longitude: "1",
+          }}
+          title="restaurant"
+          description="ddd"
+          identifier="origin"
+          pinColor="#00CCBB"
+        />
+      </MapView>
+      <SafeAreaView className="bg-white fle flex-row items-center space-x-5 h-28">
+        <Image
+          source={{
+            uri: "https://links.papareact.com/wru",
+          }}
+          className="w-12 h-12 bg-gray-300 p-4 rounded-full ml-5"
+        />
+        <View className="flex flex-1">
+          <Text className="text-lg">Sonny Sangha</Text>
+          <Text className="text-gray-400">Your Rider</Text>
+        </View>
+        <Text className="text-[#00CCBB] text-lg mr-5 font-bold">Call</Text>
+      </SafeAreaView>
     </View>
   );
 };

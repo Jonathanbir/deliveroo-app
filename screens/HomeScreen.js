@@ -1,4 +1,11 @@
-import { View, Text, SafeAreaView, Image, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  SafeAreaView,
+  Image,
+  ScrollView,
+} from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -7,7 +14,6 @@ import {
   SearchIcon,
   UserIcon,
 } from "react-native-heroicons/outline";
-import { TextInput } from "react-native-web";
 import Categories from "../components/Categories";
 import FeaturedRow from "../components/FeaturedRow";
 import { featuredData } from "../FeaturedData";

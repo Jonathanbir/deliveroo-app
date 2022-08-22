@@ -49,30 +49,34 @@ const BasketScreen = () => {
         </View>
         <ScrollView className="divide-y divide-gray-200">
           {Object.entries(groupedItemsInBasket).map(([key, items]) => (
-            <View
-              key={key}
-              className="flex flex-row items-center bg-white py-2 px-5"
-            >
-              <Text className="text-[#00CCBB] px-2">{items.amount} x</Text>
-              <Image
-                source={{
-                  uri: items.image,
-                }}
-                className="h-12 w-12 rounded-full"
-              />
-              <Text className="flex-1 px-2">{items.name}</Text>
-              <Text className="text-gray-600 px-2">
-                <Currency quantity={items.price} currency="GBP" />
-              </Text>
-              <TouchableOpacity>
-                <Text
-                  className="text-[#00CCBB] text-xs"
-                  onPress={() => dispatch(removeFromBasket({ id: key }))}
+            <>
+              {items.amount !== 0 && (
+                <View
+                  key={key}
+                  className="flex flex-row items-center bg-white py-2 px-5"
                 >
-                  Remove
-                </Text>
-              </TouchableOpacity>
-            </View>
+                  <Text className="text-[#00CCBB] px-2">{items.amount} x</Text>
+                  <Image
+                    source={{
+                      uri: items.image,
+                    }}
+                    className="h-12 w-12 rounded-full"
+                  />
+                  <Text className="flex-1 px-2">{items.name}</Text>
+                  <Text className="text-gray-600 px-2">
+                    <Currency quantity={items.price} currency="GBP" />
+                  </Text>
+                  <TouchableOpacity>
+                    <Text
+                      className="text-[#00CCBB] text-xs"
+                      onPress={() => dispatch(removeFromBasket({ id: key }))}
+                    >
+                      Remove
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              )}
+            </>
           ))}
         </ScrollView>
 

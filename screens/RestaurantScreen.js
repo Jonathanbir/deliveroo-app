@@ -1,9 +1,8 @@
-import { View, Image, TouchableOpacity, Text } from "react-native";
+import { View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 import React, { useEffect, useLayoutEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { setRestaurant } from "../features/restaurantSlice";
-import { ScrollView } from "react-native-web";
 import { calculateAmounts, calculateTotals } from "../features/basketSlice";
 import DishRow from "../components/DishRow";
 import {
