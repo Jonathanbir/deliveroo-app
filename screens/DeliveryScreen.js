@@ -8,13 +8,16 @@ import {
 import React from "react";
 import { XIcon } from "react-native-heroicons/outline";
 import * as Progress from "react-native-progress";
-import MapView from "react-native-maps";
-import { Marker } from "react-native-svg";
+// import MapView from "react-native-maps";
+// import { Marker } from "react-native-svg";
 
 const DeliveryScreen = () => {
   return (
-    <View className="flex flex-1  bg-[#00CCBB]">
-      <SafeAreaView className="z-50">
+    <View className="flex flex-1">
+      <SafeAreaView
+        className="w-full bg-[#00CCBB] z-50"
+        style={{ position: "fixed" }}
+      >
         <View className="flex flex-row justify-between items-center p-5">
           <TouchableOpacity onPress={() => navigation.navigate("HOME")}>
             <XIcon size={30} color="white" />
@@ -40,7 +43,7 @@ const DeliveryScreen = () => {
           </Text>
         </View>
       </SafeAreaView>
-      <MapView
+      {/* <MapView
         initialRegion={{
           latitude: 37.78825,
           longitude: -122.4324,
@@ -60,12 +63,22 @@ const DeliveryScreen = () => {
           identifier="origin"
           pinColor="#00CCBB"
         />
-      </MapView>
-      <SafeAreaView className="bg-white fle flex-row items-center space-x-5 h-28">
+      </MapView> */}
+      <Image
+        source={{
+          uri: require("../assets/map.png"),
+        }}
+        className="w-full h-full mt-5"
+      />
+      <SafeAreaView
+        className="w-full bottom-0 bg-white flex flex-row items-center space-x-5 h-28"
+        style={{ position: "fixed" }}
+      >
         <Image
           source={{
             uri: "https://links.papareact.com/wru",
           }}
+          S
           className="w-12 h-12 bg-gray-300 p-4 rounded-full ml-5"
         />
         <View className="flex flex-1">
