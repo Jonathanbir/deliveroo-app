@@ -1,6 +1,6 @@
+import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import Currency from "react-currency-formatter";
-import React from "react";
 import {
   MinusCircleIcon,
   PlusCircleIcon,

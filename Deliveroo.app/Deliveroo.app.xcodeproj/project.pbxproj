@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABDAB55128B36756007A3FFD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB55028B36756007A3FFD /* Tests_iOS.swift */; };
+		ABDAB55328B36756007A3FFD /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB55228B36756007A3FFD /* Tests_iOSLaunchTests.swift */; };
+		ABDAB55D28B36756007A3FFD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB55C28B36756007A3FFD /* Tests_macOS.swift */; };
+		ABDAB55F28B36756007A3FFD /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB55E28B36756007A3FFD /* Tests_macOSLaunchTests.swift */; };
+		ABDAB56028B36756007A3FFD /* Deliveroo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB53828B3674F007A3FFD /* Deliveroo_appApp.swift */; };
+		ABDAB56128B36756007A3FFD /* Deliveroo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB53828B3674F007A3FFD /* Deliveroo_appApp.swift */; };
+		ABDAB56228B36756007A3FFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB53928B3674F007A3FFD /* ContentView.swift */; };
+		ABDAB56328B36756007A3FFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAB53928B3674F007A3FFD /* ContentView.swift */; };
+		ABDAB56428B36756007A3FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDAB53A28B36756007A3FFD /* Assets.xcassets */; };
+		ABDAB56528B36756007A3FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDAB53A28B36756007A3FFD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABDAB54D28B36756007A3FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABDAB53328B3674F007A3FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABDAB53E28B36756007A3FFD;
+			remoteInfo = "Deliveroo.app (iOS)";
+		};
+		ABDAB55928B36756007A3FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABDAB53328B3674F007A3FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABDAB54428B36756007A3FFD;
+			remoteInfo = "Deliveroo.app (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABDAB53828B3674F007A3FFD /* Deliveroo_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deliveroo_appApp.swift; sourceTree = "<group>"; };
+		ABDAB53928B3674F007A3FFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABDAB53A28B36756007A3FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABDAB53F28B36756007A3FFD /* Deliveroo.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deliveroo.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDAB54528B36756007A3FFD /* Deliveroo.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deliveroo.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDAB54728B36756007A3FFD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		ABDAB54C28B36756007A3FFD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDAB55028B36756007A3FFD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		ABDAB55228B36756007A3FFD /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		ABDAB55828B36756007A3FFD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDAB55C28B36756007A3FFD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		ABDAB55E28B36756007A3FFD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABDAB53C28B36756007A3FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54228B36756007A3FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54928B36756007A3FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB55528B36756007A3FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABDAB53228B3674F007A3FFD = {
+			isa = PBXGroup;
+			children = (
+				ABDAB53728B3674F007A3FFD /* Shared */,
+				ABDAB54628B36756007A3FFD /* macOS */,
+				ABDAB54F28B36756007A3FFD /* Tests iOS */,
+				ABDAB55B28B36756007A3FFD /* Tests macOS */,
+				ABDAB54028B36756007A3FFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABDAB53728B3674F007A3FFD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAB53828B3674F007A3FFD /* Deliveroo_appApp.swift */,
+				ABDAB53928B3674F007A3FFD /* ContentView.swift */,
+				ABDAB53A28B36756007A3FFD /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ABDAB54028B36756007A3FFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAB53F28B36756007A3FFD /* Deliveroo.app.app */,
+				ABDAB54528B36756007A3FFD /* Deliveroo.app.app */,
+				ABDAB54C28B36756007A3FFD /* Tests iOS.xctest */,
+				ABDAB55828B36756007A3FFD /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABDAB54628B36756007A3FFD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAB54728B36756007A3FFD /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		ABDAB54F28B36756007A3FFD /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAB55028B36756007A3FFD /* Tests_iOS.swift */,
+				ABDAB55228B36756007A3FFD /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		ABDAB55B28B36756007A3FFD /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAB55C28B36756007A3FFD /* Tests_macOS.swift */,
+				ABDAB55E28B36756007A3FFD /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABDAB53E28B36756007A3FFD /* Deliveroo.app (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDAB56828B36756007A3FFD /* Build configuration list for PBXNativeTarget "Deliveroo.app (iOS)" */;
+			buildPhases = (
+				ABDAB53B28B36756007A3FFD /* Sources */,
+				ABDAB53C28B36756007A3FFD /* Frameworks */,
+				ABDAB53D28B36756007A3FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Deliveroo.app (iOS)";
+			productName = "Deliveroo.app (iOS)";
+			productReference = ABDAB53F28B36756007A3FFD /* Deliveroo.app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABDAB54428B36756007A3FFD /* Deliveroo.app (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDAB56B28B36756007A3FFD /* Build configuration list for PBXNativeTarget "Deliveroo.app (macOS)" */;
+			buildPhases = (
+				ABDAB54128B36756007A3FFD /* Sources */,
+				ABDAB54228B36756007A3FFD /* Frameworks */,
+				ABDAB54328B36756007A3FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Deliveroo.app (macOS)";
+			productName = "Deliveroo.app (macOS)";
+			productReference = ABDAB54528B36756007A3FFD /* Deliveroo.app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABDAB54B28B36756007A3FFD /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDAB56E28B36756007A3FFD /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				ABDAB54828B36756007A3FFD /* Sources */,
+				ABDAB54928B36756007A3FFD /* Frameworks */,
+				ABDAB54A28B36756007A3FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABDAB54E28B36756007A3FFD /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = ABDAB54C28B36756007A3FFD /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ABDAB55728B36756007A3FFD /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDAB57128B36756007A3FFD /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				ABDAB55428B36756007A3FFD /* Sources */,
+				ABDAB55528B36756007A3FFD /* Frameworks */,
+				ABDAB55628B36756007A3FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABDAB55A28B36756007A3FFD /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = ABDAB55828B36756007A3FFD /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABDAB53328B3674F007A3FFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					ABDAB53E28B36756007A3FFD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					ABDAB54428B36756007A3FFD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					ABDAB54B28B36756007A3FFD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = ABDAB53E28B36756007A3FFD;
+					};
+					ABDAB55728B36756007A3FFD = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = ABDAB54428B36756007A3FFD;
+					};
+				};
+			};
+			buildConfigurationList = ABDAB53628B3674F007A3FFD /* Build configuration list for PBXProject "Deliveroo.app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABDAB53228B3674F007A3FFD;
+			productRefGroup = ABDAB54028B36756007A3FFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABDAB53E28B36756007A3FFD /* Deliveroo.app (iOS) */,
+				ABDAB54428B36756007A3FFD /* Deliveroo.app (macOS) */,
+				ABDAB54B28B36756007A3FFD /* Tests iOS */,
+				ABDAB55728B36756007A3FFD /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABDAB53D28B36756007A3FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB56428B36756007A3FFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54328B36756007A3FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB56528B36756007A3FFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54A28B36756007A3FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB55628B36756007A3FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABDAB53B28B36756007A3FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB56228B36756007A3FFD /* ContentView.swift in Sources */,
+				ABDAB56028B36756007A3FFD /* Deliveroo_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54128B36756007A3FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB56328B36756007A3FFD /* ContentView.swift in Sources */,
+				ABDAB56128B36756007A3FFD /* Deliveroo_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB54828B36756007A3FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB55328B36756007A3FFD /* Tests_iOSLaunchTests.swift in Sources */,
+				ABDAB55128B36756007A3FFD /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDAB55428B36756007A3FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDAB55F28B36756007A3FFD /* Tests_macOSLaunchTests.swift in Sources */,
+				ABDAB55D28B36756007A3FFD /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABDAB54E28B36756007A3FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABDAB53E28B36756007A3FFD /* Deliveroo.app (iOS) */;
+			targetProxy = ABDAB54D28B36756007A3FFD /* PBXContainerItemProxy */;
+		};
+		ABDAB55A28B36756007A3FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABDAB54428B36756007A3FFD /* Deliveroo.app (macOS) */;
+			targetProxy = ABDAB55928B36756007A3FFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ABDAB56628B36756007A3FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABDAB56728B36756007A3FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ABDAB56928B36756007A3FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Deliveroo-app";
+				PRODUCT_NAME = Deliveroo.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABDAB56A28B36756007A3FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Deliveroo-app";
+				PRODUCT_NAME = Deliveroo.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABDAB56C28B36756007A3FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Deliveroo-app";
+				PRODUCT_NAME = Deliveroo.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ABDAB56D28B36756007A3FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Deliveroo-app";
+				PRODUCT_NAME = Deliveroo.app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ABDAB56F28B36756007A3FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Deliveroo.app (iOS)";
+			};
+			name = Debug;
+		};
+		ABDAB57028B36756007A3FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Deliveroo.app (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABDAB57228B36756007A3FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Deliveroo.app (macOS)";
+			};
+			name = Debug;
+		};
+		ABDAB57328B36756007A3FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Deliveroo.app (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABDAB53628B3674F007A3FFD /* Build configuration list for PBXProject "Deliveroo.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDAB56628B36756007A3FFD /* Debug */,
+				ABDAB56728B36756007A3FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDAB56828B36756007A3FFD /* Build configuration list for PBXNativeTarget "Deliveroo.app (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDAB56928B36756007A3FFD /* Debug */,
+				ABDAB56A28B36756007A3FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDAB56B28B36756007A3FFD /* Build configuration list for PBXNativeTarget "Deliveroo.app (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDAB56C28B36756007A3FFD /* Debug */,
+				ABDAB56D28B36756007A3FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDAB56E28B36756007A3FFD /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDAB56F28B36756007A3FFD /* Debug */,
+				ABDAB57028B36756007A3FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDAB57128B36756007A3FFD /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDAB57228B36756007A3FFD /* Debug */,
+				ABDAB57328B36756007A3FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABDAB53328B3674F007A3FFD /* Project object */;
+}
