@@ -11,28 +11,29 @@ export const basketSlice = createSlice({
   initialState,
   reducers: {
     setBasket: (state, action) => {
-      state.items = [action.payload];
+      state.items = action.payload;
     },
     increaseBasket: (state, { payload }) => {
-      const basketItem = state.items[0].find((item) => item.id === payload.id);
+      const basketItem = state.items.find((item) => item.id === payload.id);
       basketItem.amount = basketItem.amount + 1;
     },
     decreaseBasket: (state, { payload }) => {
-      const basketItem = state.items[0].find((item) => item.id === payload.id);
+      const basketItem = state.items.find((item) => item.id === payload.id);
       basketItem.amount = basketItem.amount - 1;
     },
     calculateAmounts: (state) => {
-      state.amounts = state.items[0].reduce((totals, item) => {
+      state.amounts = state.items.reduce((totals, item) => {
         return totals + item.amount;
       }, 0);
     },
     calculateTotals: (state) => {
-      state.total = state.items[0].reduce((totals, item) => {
+      state.total = state.items.reduce((totals, item) => {
         return totals + item.amount * item.price;
       }, 0);
     },
-    removeFromBasket: (state) => {
-      state.value -= 1;
+    removeFromBasket: (state, { payload }) => {
+      console.log("staeid", current(state), payload);
+      state.items = state.items.filter((item) => item.id !== payload);
     },
   },
 });

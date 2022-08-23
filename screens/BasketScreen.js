@@ -17,19 +17,10 @@ import { XCircleIcon } from "react-native-heroicons/outline";
 const BasketScreen = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  const restaurant = useSelector(selectRestaurant);
+  //   const restaurant = useSelector(selectRestaurant);
   const items = useSelector(selectBasketItems);
-  const { amounts, total } = useSelector((state) => state.basket);
+  const { total } = useSelector((state) => state.basket);
   const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([]);
-
-  useMemo(() => {
-    const gropedItems = items.reduce((results, items) => {
-      (results[items.id] = results[items.id] || []).push(item);
-      return results;
-    });
-
-    setGroupedItemsInBasket(gropedItems);
-  }, [items]);
 
   return (
     <SafeAreaView className="flex flex-1 bg-white">
@@ -48,11 +39,11 @@ const BasketScreen = () => {
           </TouchableOpacity>
         </View>
         <ScrollView className="divide-y divide-gray-200">
-          {Object.entries(groupedItemsInBasket).map(([key, items]) => (
+          {Object.entries(items).map(([id, items]) => (
             <>
               {items.amount !== 0 && (
                 <View
-                  key={key}
+                  key={id}
                   className="flex flex-row items-center bg-white py-2 px-5"
                 >
                   <Text className="text-[#00CCBB] px-2">{items.amount} x</Text>
@@ -69,7 +60,11 @@ const BasketScreen = () => {
                   <TouchableOpacity>
                     <Text
                       className="text-[#00CCBB] text-xs"
-                      onPress={() => dispatch(removeFromBasket({ id: key }))}
+                      onPress={() =>
+                        dispatch(
+                          removeFromBasket(JSON.stringify(Number(id) + 1))
+                        )
+                      }
                     >
                       Remove
                     </Text>

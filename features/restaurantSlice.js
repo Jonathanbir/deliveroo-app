@@ -19,24 +19,20 @@ export const restaurantSlice = createSlice({
       state.items = [action.payload];
     },
     increaseRestaurant: (state, { payload }) => {
-      const restaurantItem = state.items[0].find(
-        (item) => item.id === payload.id
-      );
+      const restaurantItem = state.items.find((item) => item.id === payload.id);
       restaurantItem.amount = restaurantItem.amount + 1;
     },
     decreaseRestaurant: (state, { payload }) => {
-      const restaurantItem = state.items[0].find(
-        (item) => item.id === payload.id
-      );
+      const restaurantItem = state.items.find((item) => item.id === payload.id);
       restaurantItem.amount = restaurantItem.amount - 1;
     },
     calculateAmounts: (state) => {
-      state.amounts = state.items[0].reduce((totals, item) => {
+      state.amounts = state.items.reduce((totals, item) => {
         return totals + item.amount;
       }, 0);
     },
     calculateTotals: (state) => {
-      state.total = state.items[0].reduce((totals, item) => {
+      state.total = state.items.reduce((totals, item) => {
         return totals + item.amount * item.price;
       }, 0);
     },

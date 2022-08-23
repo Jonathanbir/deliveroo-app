@@ -104,7 +104,7 @@ const RestaurantScreen = () => {
           <View className="pb-36">
             <Text className="px-4 pt-6 text-xl font-bold">Menu</Text>
             {/* DishRow */}
-            {items[0].map((dish) => {
+            {items.map((dish) => {
               return (
                 <DishRow
                   key={Math.random()}

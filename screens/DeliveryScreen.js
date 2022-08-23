@@ -19,7 +19,7 @@ const DeliveryScreen = () => {
         style={{ position: "fixed" }}
       >
         <View className="flex flex-row justify-between items-center p-5">
-          <TouchableOpacity onPress={() => navigation.navigate("HOME")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <XIcon size={30} color="white" />
           </TouchableOpacity>
           <Text className="font-light text-white text-lg">Order Help</Text>
