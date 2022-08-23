@@ -36,6 +36,11 @@ const BasketScreen = () => {
             <XCircleIcon color="#00CCBB" height={50} width={50} />
           </TouchableOpacity>
         </View>
+        {total === 0 && (
+          <Text className="text-center text-gray-400 text-lg mt-64">
+            You should oder something!
+          </Text>
+        )}
         <ScrollView className="divide-y divide-gray-200">
           {Object.entries(items).map(([id, items]) => (
             <>
@@ -96,8 +101,13 @@ const BasketScreen = () => {
           </View>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate("Preparing")}
-            className="rounded-lg bg-[#00CCBB] p-4"
+            onPress={() => {
+              total !== 0 && navigation.navigate("Preparing");
+            }}
+            disabled={total === 0}
+            className={`rounded-lg ${
+              total === 0 ? `bg-gray-300` : `bg-[#00CCBB]`
+            } p-4`}
           >
             <Text className="text-lg text-white font-bold text-center">
               Place Order

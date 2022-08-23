@@ -42,6 +42,7 @@ const DishRow = ({ id, name, description, price, amount, image }) => {
           >
             <MinusCircleIcon
               color={amount === 0 ? "gray" : "#00CCBB"}
+              disabled={amount === 0}
               size={40}
             />
           </TouchableOpacity>
