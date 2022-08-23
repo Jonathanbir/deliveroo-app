@@ -32,8 +32,11 @@ export const basketSlice = createSlice({
       }, 0);
     },
     removeFromBasket: (state, { payload }) => {
-      console.log("staeid", current(state), payload);
-      state.items = state.items.filter((item) => item.id !== payload);
+      state.items.forEach((item) => {
+        if (item.id === payload) {
+          item.amount = 0;
+        }
+      });
     },
   },
 });

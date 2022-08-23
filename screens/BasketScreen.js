@@ -17,10 +17,8 @@ import { XCircleIcon } from "react-native-heroicons/outline";
 const BasketScreen = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  //   const restaurant = useSelector(selectRestaurant);
   const items = useSelector(selectBasketItems);
   const { total } = useSelector((state) => state.basket);
-  const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([]);
 
   return (
     <SafeAreaView className="flex flex-1 bg-white">
