@@ -89,14 +89,17 @@ const BasketScreen = () => {
           <View className="flex-row justify-between">
             <Text className="text-gray-400">Deliver Fee</Text>
             <Text className="text-gray-400">
-              <Currency quantity={5.99} currency="GBP" />
+              <Currency quantity={total === 0 ? 0 : 5.99} currency="GBP" />
             </Text>
           </View>
 
           <View className="flex-row justify-between">
             <Text>Order Total</Text>
             <Text className="font-extrabold">
-              <Currency quantity={total + 5.99} currency="GBP" />
+              <Currency
+                quantity={total === 0 ? 0 : total + 5.99}
+                currency="GBP"
+              />
             </Text>
           </View>
 
